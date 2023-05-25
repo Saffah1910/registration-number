@@ -1,33 +1,24 @@
-function RegistrationNumbers() {
+function RegistrationNumbers(regNo) {
     var allTheRegNums = {};
 
-
-    // function displayRegNums(regNo) {
-    //     if (regNo !== "") {
-    //         return regNo
-    //     }
-    // else {
-    //     return "Enter registration number"
-    // }
 
 
     function validData(regNo) {
         if (regNo !== "") {
             let regEx = /[\^C][A,J,L,F]\s?\d{1,3}\s?\d{1,3}$/
             regEx.test(regNo);
+            return regNo.toUpperCase()
         }
         else {
             return "Enter registration number"
         }
-        return regNo
-
-
     };
 
     function invalidMessage(regNo) {
         if (validData(regNo) == false) {
-            return "invalid data"
+
         }
+        return "invalid data"
     };
 
 
@@ -53,7 +44,7 @@ function RegistrationNumbers() {
 
 
     return {
-        // displayRegNums,
+
         validData,
         invalidMessage,
         regNumExists,
