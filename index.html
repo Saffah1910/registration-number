@@ -5,40 +5,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/registration_number.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/registration_number.css">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple"> -->
+
+    <title>Registration Numbers</title>
 </head>
 
 <body>
 
     <h1>Registration Numbers from Western Cape</h1>
-    <div>
+
+
+    <div class="section">
+
         <p>Registration Number : <input type="text" class="textArea" id="key" placeholder="Enter registration number">
         </p>
+        <p class="invalidMsg"></p>
 
         <button class="addRegNoBtn">ADD</button>
 
     </div>
     <br>
-    <div>
-        <label for="regNums">Select a town:</label>
-        <select name="regNums" class="regNums">
-            <option value="allTowns">All towns</option>
-            <option value="capetown">Cape Town</option>
-            <option value="paarl">Paarl</option>
-            <option value="vredenburg">Vredenburg</option>
-            <option value="stellenbosch">Stellenbosch</option>
-        </select>
-    </div>
 
 
-    <div id="boxRegNo">
-<p></p>
+
+    <div class="boxRegNo">
+        <div>
+            <label for="regNums">Select a town:</label>
+            <select name="regNums" class="regNums">
+                <option value="allTowns">All towns</option>
+                <option value="capetown">Cape Town</option>
+                <option value="paarl">Paarl</option>
+                <option value="vredenburg">Vredenburg</option>
+                <option value="stellenbosch">Stellenbosch</option>
+            </select>
+        </div>
+
+ 
     </div>
 
 
 </body>
-<script src="/js/registration_number.js" charset="utf-8"></script>
 <script src="/js/registration_factory.js" charset="utf-8"></script>
+<script src="/js/registration_number.js" charset="utf-8"></script>
 
 </html>

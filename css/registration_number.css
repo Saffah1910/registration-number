@@ -1,0 +1,57 @@
+/* @font-face {
+    font-family: bubbleCar;
+    src: url(JlrBubbleCar-KdaZ.ttf);
+}
+
+:root {
+    font-size: 20px;
+}
+
+body {
+    background-image: url(/css/bgCar.jpg);
+    background-size: cover;
+    position: relative;
+
+}
+
+body h1 {
+    color: #8f250c;
+    font-family: bubbleCar;
+    font-size: 30px;
+    text-shadow: 3px 3px 3px grey;
+    text-align: center;
+}
+
+.section {
+
+    border-style: solid;
+    border-color: #8f250c;
+    border-radius: 5%;
+  border-width: 5px;
+    text-align: center;
+    font-size: 2em;
+
+
+
+}
+
+@media (max-width: 768px) {
+
+  
+    body {
+        background-size: cover;
+        position: relative;
+
+    }
+} */
+.red {
+    border: 1px solid;
+    margin: 0 auto;
+    padding: 15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-color: #ff9b85;
+    background-image: url('../css/error.jpg');
+    width: fit-content;
+    color: #c1121f;
+}
