@@ -6,6 +6,7 @@ let regNumsElem = document.querySelector(".regNums");
 
 
 addRegNoBtnElem.addEventListener("click", function () {
+    alert("hi")
 
     var registrationNums = RegistrationNumbers();
 
