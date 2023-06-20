@@ -8,7 +8,7 @@
 }
 
 body {
-    background-image: url(/css/bgCar.jpg);
+    background-image: url(../css/bgCar.jpg);
     background-size: cover;
     position: relative;
     background-repeat: no-repeat;
