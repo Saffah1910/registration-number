@@ -15,6 +15,15 @@ function RegistrationNumbers(regNo) {
             return "red"
         
     };
+    function addNumberPlate(){
+        return "numberPlate"
+    }
+    function addFont(){
+        return "font"
+    }
+    function addCenter(){
+        return "text-align"
+    }
     // function filterTown(){
     //     if (town === "capetown"){
     //         return allTheRegNums.startsWith("CA")
@@ -37,6 +46,9 @@ function RegistrationNumbers(regNo) {
 
         validData,
         addRed,
+        addNumberPlate,
+        addFont,
+        addCenter
         // filterTown
       
 

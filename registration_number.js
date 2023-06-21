@@ -6,11 +6,11 @@ let regNumsElem = document.querySelector(".regNums");
 
 
 addRegNoBtnElem.addEventListener("click", function () {
-    alert("hi")
+
 
     var registrationNums = RegistrationNumbers();
 
-    let regEx = /[\^C][A,J,L,F]\s?\d{1,3}\s?\d{1,3}$/
+    let regEx = /[\^Cc][Aa,Jj,Ll,Ff]\s?\d{1,3}\s?\d{1,3}$/
     let result = textAreaElem.value.match(regEx);
 
 
@@ -25,7 +25,10 @@ addRegNoBtnElem.addEventListener("click", function () {
         //add element + content to DOM
         const currentDiv = document.getElementById("boxRegNo");
         document.body.insertBefore(newDiv, currentDiv);
-        textAreaElem.value = ""
+        
+        newDiv.classList.add(registrationNums.addNumberPlate(),registrationNums.addFont(),registrationNums.addCenter());
+
+        // textAreaElem.value = ""
     }
   
     if (!result && textAreaElem.value !== "") {
@@ -34,7 +37,7 @@ addRegNoBtnElem.addEventListener("click", function () {
         //creates a new div
         const newDiv = document.createElement("div");
         //gives it content
-        const newContent = document.createTextNode("Enter Valid data");
+        const newContent = document.createTextNode("Only enter a registration number");
         //add content to new div
         newDiv.appendChild(newContent);
         //add element + content to DOM
