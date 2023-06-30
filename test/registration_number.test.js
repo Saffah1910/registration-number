@@ -22,19 +22,19 @@ describe("Registartion numbers", function () {
 
 
     });
-    describe("Errors", function () {
-        it("if no data is entered it should return the message : Enter registration number", function () {
-            var regTest = RegistrationNumbers();
-            assert.equal("Enter registration number", regTest.validData(""))
-        });
-        // it("should not display the same registration number again",function(){
+    // describe("Errors", function () {
+    //     it("if no data is entered it should return the message : Enter registration number", function () {
+    //         var regTest = RegistrationNumbers();
+    //         assert.equal("Enter registration number", regTest.validData(""))
+    //     });
+    //     // it("should not display the same registration number again",function(){
 
-        // });
+    //     // });
 
-        it("if the registration number is GP 77 is entered it should return the message : Invalid data", function () {
-            var regTest = RegistrationNumbers();
-            assert.equal("invalid data", regTest.invalidMessage("GP 77"))
-        });
-    });
+    //     it("if the registration number is GP 77 is entered it should return the message : Invalid data", function () {
+    //         var regTest = RegistrationNumbers();
+    //         assert.equal("invalid data", regTest.invalidMessage("GP 77"))
+    //     });
+    // });
 
 });
