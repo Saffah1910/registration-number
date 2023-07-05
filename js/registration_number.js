@@ -8,6 +8,7 @@ let emptyInput = document.querySelector(".emptyInput");
 
 var registrationNums = RegistrationNumbers();
 addRegNoBtnElem.addEventListener("click", function () {
+    registrationNums.filterTown();
 
 registrationNums.displayNewName(textAreaElem.value);
     registrationNums.displayNewName();

@@ -25,7 +25,7 @@ function RegistrationNumbers(regNo) {
     function displayNewName(regNo) {
         if (allTheRegNums.includes(regNo)) {
 
-
+console.log(allTheRegNums)
             // console.log(`${regNo} has already been displayed.`);
             console.log("Registration number alreday exists") 
         } else {
@@ -49,7 +49,8 @@ function RegistrationNumbers(regNo) {
     }
     function filterTown(town){
         if (town === "capetown"){
-            return allTheRegNums
+            console.log(allTheRegNums);
+            return allTheRegNums.startsWith("ca");
         }
         if(town === "paarl"){
             return allTheRegNums
