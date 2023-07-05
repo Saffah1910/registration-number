@@ -10,7 +10,7 @@ var registrationNums = RegistrationNumbers();
 addRegNoBtnElem.addEventListener("click", function () {
 
 registrationNums.displayNewName(textAreaElem.value);
-    // registrationNums.displayNewName();
+    registrationNums.displayNewName();
 
     let regEx = /[\^Cc][Aa,Jj,Ll,Kk]\s?\d{1,3}\s?\d{1,3}$/
     let result = textAreaElem.value.match(regEx);

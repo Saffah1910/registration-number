@@ -15,17 +15,17 @@ describe("Registartion numbers", function () {
             var regTest = RegistrationNumbers();
             assert.equal("CL 56", regTest.validData("CL 56"))
         });
-        it("should return CJ73 in captital letters if it is entered in the textbox", function () {
+        it("should return CJ 73 in captital letters if it is entered in the textbox", function () {
             var regTest = RegistrationNumbers();
-            assert.equal("CJ73", regTest.validData("CJ73"))
+            assert.equal("CJ 73", regTest.validData("CJ 73"))
         });
 
 
     });
-    // describe("Errors", function () {
-    //     it("if no data is entered it should return the message : Enter registration number", function () {
+    // describe("Filter", function () {
+    //     it("if town cape town is selected it should only display regitration numbers from that town", function () {
     //         var regTest = RegistrationNumbers();
-    //         assert.equal("Enter registration number", regTest.validData(""))
+    //         assert.equal("allTheRegNums.startsWith(CA)", regTest.filterTown("ca 123"))
     //     });
     //     // it("should not display the same registration number again",function(){
 
@@ -36,5 +36,18 @@ describe("Registartion numbers", function () {
     //         assert.equal("invalid data", regTest.invalidMessage("GP 77"))
     //     });
     // });
+    describe('filterTown', () => {
+        it('should return true if the town is "capetown" and the reg number starts with "CA"', () => {
+            var regTest = RegistrationNumbers();
+            assert.equal(true, regTest.filterTown("ca 123"));
+        });
+
+        it('should return true if the town is "paarl" and the reg number starts with "CJ"', () => {
+            var regTest = RegistrationNumbers();
+            assert.equal([],regTest.filterTown("paarl", "CJ456"));
+        });
+
+        // Write other test cases for the remaining towns and their expected outputs
+    });
 
 });

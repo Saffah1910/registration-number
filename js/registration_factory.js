@@ -12,9 +12,12 @@ function RegistrationNumbers(regNo) {
   
     function existRegNo(regNo) {
         if (allTheRegNums[regNo] === undefined) {
+            allTheRegNums.push(regNo);
             allTheRegNums[regNo] = 1
+
         }
     }
+
     function getRegNo() {
         return allTheRegNums
     };
@@ -22,10 +25,13 @@ function RegistrationNumbers(regNo) {
     function displayNewName(regNo) {
         if (allTheRegNums.includes(regNo)) {
 
-            console.log(`${regNo} has already been displayed.`);
+
+            // console.log(`${regNo} has already been displayed.`);
+            console.log("Registration number alreday exists") 
         } else {
-            console.log(`Displaying ${regNo} on the screen.`);
+            // console.log(`Displaying ${regNo} on the screen.`);
             allTheRegNums.push(regNo);
+            return regNo
         }
     }
     function addRed() {
@@ -43,16 +49,16 @@ function RegistrationNumbers(regNo) {
     }
     function filterTown(town){
         if (town === "capetown"){
-            return allTheRegNums.startsWith("CA")
+            return allTheRegNums
         }
         if(town === "paarl"){
-            return allTheRegNums.startsWith("CJ")
+            return allTheRegNums
         }
         if(town === "malmesbury"){
-            return allTheRegNums.startsWith("CF")
+            return allTheRegNums
         }
         if(town === "stellenbosch"){
-            return allTheRegNums.startsWith("CL")
+            return allTheRegNums
         }
         if(town === "allTowns"){
             return allTheRegNums
